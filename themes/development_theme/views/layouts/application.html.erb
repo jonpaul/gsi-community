@@ -8,6 +8,7 @@
         <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
         <div id='header'>
           <%= render :partial => "/shared/header" %>
+					<%= render :partial => "/shared/search" %>
         </div>
         <div id='body' class='clearfix'>
           <%= yield %>
